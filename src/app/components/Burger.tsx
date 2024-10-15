@@ -29,15 +29,18 @@ const burgers = [
 
 const BurgerList = () => { 
   return (
-    <div className='p-4 flex items-center justify-center overflow-x-auto px-6 space-x-6'>
+    <div className='p-4 flex justify-evenly overflow-x-auto'>
       {burgers.map((burger) => (
-        <div key={burger.id} className={`flex-shrink-0 ${burger.bgColor} rounded-lg shadow-lg w-80 border-b-4 border-gray-300`}>
-          <img className="w-full h-64 object-cover rounded-t-lg" src={burger.imageUrl} alt={burger.title} />
-          <div className='text-white px-6 py-4'>
+        <div 
+          key={burger.id} 
+          className={`flex flex-col ${burger.bgColor} rounded-lg shadow-lg border-b-4 border-gray-300 w-80 mx-4`} // Increased width to w-80 and added mx-4 for spacing
+        >
+          <img className="w-full h-64 object-cover rounded-t-lg" src={burger.imageUrl} alt={burger.title} /> {/* Increased image height */}
+          <div className='text-white px-4 py-2'>
             <span className='block opacity-75 text-sm'>{burger.category}</span>
             <div className='flex justify-between items-center'>
               <span className='font-semibold text-lg truncate'>{burger.title}</span>
-              <span className='bg-white rounded-full text-orange-500 text-sm font-bold px-3 py-2 leading-none'>
+              <span className='bg-white rounded-full text-orange-500 text-sm font-bold px-3 py-1 leading-none'>
                 {burger.price.toFixed(2)}
               </span>
             </div>

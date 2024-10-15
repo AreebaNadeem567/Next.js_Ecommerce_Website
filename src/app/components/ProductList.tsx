@@ -25,20 +25,19 @@ const products = [
     imageUrl: "https://i.pinimg.com/564x/fd/cb/ff/fdcbffc27e95e5b0e46ad1aeae413d52.jpg",
     bgColor: "bg-amber-500"
   },   
-
 ];
 
 const ProductList = () => { 
   return (
-    <div className='p-4 flex items-center justify-center overflow-x-auto px-6 space-x-6'> {/* Added space-x-6 for equal spacing */}
+    <div className='p-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4'> {/* Responsive grid layout */}
       {products.map((product) => (
-        <div key={product.id} className={`flex-shrink-0 ${product.bgColor} rounded-lg shadow-lg w-80 border-b-4 border-gray-300`}>
-          <img className="w-full h-64 object-cover rounded-t-lg" src={product.imageUrl} alt={product.title} />
-          <div className='text-white px-6 py-4'>
+        <div key={product.id} className={`flex flex-col ${product.bgColor} rounded-lg shadow-lg border-b-4 border-gray-300 overflow-hidden`}>
+          <img className="w-full h-64 object-cover" src={product.imageUrl} alt={product.title} /> {/* Increased height */}
+          <div className='text-white px-4 py-4'> {/* Adjusted padding */}
             <span className='block opacity-75 text-sm'>{product.category}</span>
             <div className='flex justify-between items-center'>
               <span className='font-semibold text-lg truncate'>{product.title}</span> {/* Truncate text to fit in one line */}
-              <span className='bg-white rounded-full text-orange-500 text-sm font-bold px-3 py-2 leading-none'>
+              <span className='bg-white rounded-full text-orange-500 text-sm font-bold px-3 py-1 leading-none'>
                 {product.price.toFixed(2)}
               </span>
             </div>

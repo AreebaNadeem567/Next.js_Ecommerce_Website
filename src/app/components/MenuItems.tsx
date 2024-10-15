@@ -3,7 +3,7 @@ import { FaShoppingCart } from "react-icons/fa";
 
 const ProductCardGrid = () => {
   const productImages = [
-    "https://i.pinimg.com/564x/4d/5d/98/4d5d981b39836c44755b4f9414ab8de1.jpg",
+    "https://i.pinimg.com/564x/4d/5d/98/4d5d981b39836c44755b4f9414ab8de1.jpg", 
     "https://i.pinimg.com/564x/d2/01/e9/d201e9814ca37981301629a106731c03.jpg",
     "https://i.pinimg.com/564x/e5/6c/7e/e56c7e393100191ba9958d734cd0d0f2.jpg",
     "https://i.pinimg.com/564x/68/f1/91/68f191a99ad7627f69e4c9a7f2fe66f7.jpg",
@@ -12,9 +12,7 @@ const ProductCardGrid = () => {
   ];
 
   return (
-    <div 
-    id="order"
-    className="relative text-center p-10">
+    <div id="order" className="relative text-center p-10">
       <div
         className="absolute inset-0"
         style={{
@@ -33,20 +31,20 @@ const ProductCardGrid = () => {
 
       <section 
         id="Projects"
-        className="w-fit mx-auto grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 justify-items-center gap-y-20 gap-x-14 mt-10 mb-5"
+        className="w-full mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-items-center gap-y-20 gap-x-14 mt-10 mb-5"
       >
         {Array.from({ length: 6 }).map((_, index) => (
           <div
             key={index}
-            className="w-70 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl z-10 relative"
+            className="w-full max-w-xs bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl z-10 relative"
           >
             <a href="#">
               <img 
                 src={productImages[index]}
                 alt={`Product ${index + 1}`}
-                className="h-80 w-72 object-cover rounded-t-xl" 
+                className="h-80 w-full object-cover rounded-t-xl" 
               />
-              <div className="px-4 py-3 w-72">
+              <div className="px-4 py-3 w-full">
                 <span className="text-slate-500 mr-3 uppercase text-xs">Category</span>
                 <p className="text-lg font-bold text-red-700 truncate block capitalize">Burger Name {index + 1}</p>
 

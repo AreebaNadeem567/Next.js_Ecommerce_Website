@@ -5,10 +5,11 @@ export default function Carousel() {
     <div>
       <section className="bg-black">
         <div className="py-4 px-2 mx-auto max-w-screen-xl sm:py-4 lg:px-6">
-          <div className="flex overflow-x-auto space-x-4">
-            <div className="flex-none bg-gradient-to-r from-black to-grey-700 h-auto w-80 flex flex-col">
+          <div className="flex overflow-x-auto space-x-4 sm:space-x-6 lg:space-x-8">
+            {/* First Card */}
+            <div className="flex-none bg-gradient-to-r from-black to-gray-700 h-auto w-60 sm:w-72 lg:w-80 flex flex-col">
               <a
-                href=""
+                href="#"
                 className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40 flex-grow"
               >
                 <img
@@ -16,16 +17,17 @@ export default function Carousel() {
                   alt="burger 1"
                   className="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"
                 />
-                <div className="absolute inset-0 bg-gradient-to-b from-grey-900/25"></div>
-                <h3 className="z-10 text-2xl font-medium text-white absolute top-0 left-0 p-4 xs:text-xl md:text-0xl">
-                  Classic Bites{" "}
+                <div className="absolute inset-0 bg-gradient-to-b from-gray-900/25"></div>
+                <h3 className="z-10 text-xl font-medium text-white absolute top-0 left-0 p-4">
+                  Classic Bites
                 </h3>
               </a>
             </div>
 
-            <div className="flex-none bg-gradient-to-r from-black to-grey-700 h-auto w-80 flex flex-col">
+            {/* Second Card */}
+            <div className="flex-none bg-gradient-to-r from-black to-gray-700 h-auto w-60 sm:w-72 lg:w-80 flex flex-col">
               <a
-                href=""
+                href="#"
                 className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40 mb-4"
               >
                 <img
@@ -33,15 +35,16 @@ export default function Carousel() {
                   alt="burger 2"
                   className="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"
                 />
-                <div className="absolute inset-0 bg-gradient-to-b from-grey-900/25"></div>
-                <h3 className="z-10 text-2xl font-medium text-white absolute top-0 left-0 p-4 xs:text-xl md:text-0xl">
-                  Gourmet Grills{" "}
+                <div className="absolute inset-0 bg-gradient-to-b from-gray-900/25"></div>
+                <h3 className="z-10 text-xl font-medium text-white absolute top-0 left-0 p-4">
+                  Gourmet Grills
                 </h3>
               </a>
 
               <div className="grid gap-4 grid-cols-2">
+                {/* Third Card */}
                 <a
-                  href=""
+                  href="#"
                   className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40"
                 >
                   <img
@@ -49,14 +52,15 @@ export default function Carousel() {
                     alt="burger 3"
                     className="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-b from-grey-900/25 to-grey-900/5"></div>
-                  <h3 className="z-10 text-2xl font-medium text-white absolute top-0 left-0 p-4 xs:text-xl md:text-0xl">
-                    Spicy Masala{" "}
+                  <div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
+                  <h3 className="z-10 text-xl font-medium text-white absolute top-0 left-0 p-4">
+                    Spicy Masala
                   </h3>
                 </a>
 
+                {/* Fourth Card */}
                 <a
-                  href=""
+                  href="#"
                   className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40"
                 >
                   <img
@@ -64,17 +68,18 @@ export default function Carousel() {
                     alt="burger 4"
                     className="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-b from-grey-900/25 to-grey-900/5"></div>
-                  <h3 className="z-10 text-2xl font-medium text-white absolute top-0 left-0 p-4 xs:text-xl md:text-0xl">
-                    Veggie{" "}
+                  <div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
+                  <h3 className="z-10 text-xl font-medium text-white absolute top-0 left-0 p-4">
+                    Veggie
                   </h3>
                 </a>
               </div>
             </div>
 
-            <div className="flex-none bg-gradient-to-r from-black to-grey-700 h-auto w-80 flex flex-col">
+            {/* Fifth Card */}
+            <div className="flex-none bg-gradient-to-r from-black to-gray-700 h-auto w-60 sm:w-72 lg:w-80 flex flex-col">
               <a
-                href=""
+                href="#"
                 className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40 flex-grow"
               >
                 <img
@@ -82,9 +87,9 @@ export default function Carousel() {
                   alt="burger 5"
                   className="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"
                 />
-                <div className="absolute inset-0 bg-gradient-to-b from-grey-900/25 to-grey-900/5"></div>
-                <h3 className="z-10 text-2xl font-medium text-white absolute top-0 left-0 p-4 xs:text-xl md:text-0xl">
-                  Cheesy Delights{" "}
+                <div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
+                <h3 className="z-10 text-xl font-medium text-white absolute top-0 left-0 p-4">
+                  Cheesy Delights
                 </h3>
               </a>
             </div>

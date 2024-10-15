@@ -15,7 +15,7 @@ const FloatingImageContentBlock = () => {
         <h3 className="text-2xl font-semibold mb-6 text-center text-white">
           Coming Soon: Our New Burger Launches
         </h3>
-        <ul className="text-white">
+        <ul className="text-white list-disc list-inside mb-6">
           <li><strong>Cheesy BBQ Bacon Burger:</strong> A mouthwatering blend of cheddar cheese, crispy bacon, and BBQ.</li>
           <li><strong>Buffalo Chicken Burger:</strong> Crispy chicken breast tossed in spicy buffalo sauce.</li>
           <li><strong>Avocado Veggie Burger:</strong> A delicious plant-based option featuring a grilled veggie patty.</li>
@@ -27,11 +27,11 @@ const FloatingImageContentBlock = () => {
         <img
           src="https://media.istockphoto.com/id/165793418/vector/seamless-fast-food-background.jpg?s=612x612&w=0&k=20&c=sGOXCqnJYG3fgQ1UKF3Sgzlm_c0T7UbjD4BAwF_hWY4="
           alt="Delicious Burger"
-          className="w-3/4 h-auto rounded-lg shadow-lg transition-transform duration-500 ease-in-out transform hover:scale-105"
+          className="w-full h-auto rounded-lg shadow-lg transition-transform duration-500 ease-in-out transform hover:scale-105"
         />
       </div>
     </section>
   );
 };
 
-export default FloatingImageContentBlock
+export default FloatingImageContentBlock;
